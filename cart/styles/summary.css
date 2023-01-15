@@ -1,0 +1,107 @@
+div#summary{
+    width: 40%;
+}
+
+div.purchase-summary{
+    background: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 10%);
+    text-align: center;
+    width: 90%;
+}
+
+div.purchase-summary > ul{
+    margin-bottom: 30px;
+}
+
+div.purchase-summary > ul > li{
+    box-sizing: border-box;
+    border-bottom: 2px solid #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    text-align: left;
+    width: 100%;
+}
+
+div.purchase-summary > ul > li > p{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+div.purchase-summary > ul > li > a{
+    font-size: 1.2rem;   
+}
+
+a.close{
+    background: url("./img/close_black_24dp.svg") no-repeat right;
+    color: transparent;
+}
+
+div.purchase-summary > ul > li.hide{
+    display: none;
+}
+
+div.purchase-summary > ul > li#coupon{
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--white);
+    width: 100%;
+}
+
+li > input{
+    border: 1px solid #EEE;
+    color: #666;
+    padding: 15px;
+    width: 70%;
+}
+
+li > button.apply{
+    background: var(--dark-blue);
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 15px;
+    width: 25%;
+}
+
+button.apply:hover{
+    background: #080d48;
+}
+
+span#coupon-error-msg{
+    color: #dd0505;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+button.checkout,
+.keep-buying{
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 70%;
+}
+
+button.checkout{
+    background: var(--dark-blue);
+    border: none;
+    color: var(--white);
+}
+
+button.checkout:hover{
+    background: #080d48;
+}
+
+button.keep-buying{
+    background: var(--white);
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+    margin-bottom: 40px;
+} 

@@ -1,0 +1,102 @@
+body{
+    background: var(--white);
+}
+
+div.body-container{
+    height: calc(100vh - 8vh);
+    margin: 0 auto;
+    width: 80%;
+}
+
+h1{
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin: 80px 0;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    width: 80%;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing:0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+table > thead > tr{
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    text-align: left;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table > thead > tr > th{
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 12px;
+    width: 20%;
+}
+
+table > tbody > tr > td{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 12px;
+}
+
+div.newsletter-container{
+    background: #F0F0F0;
+    margin: 100px auto 0;
+    padding: 30px 0;
+    text-align: center;
+    width: 60%;
+}
+
+div.newsletter-container > img{
+    height: 50px;
+    width: 50px;
+}
+
+div.newsletter-container > h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+div.newsletter-container > p{
+    font-size: 1.6rem;
+}
+
+div.newsletter-container > div{
+    margin: 30px auto;
+    width: 50%;
+}
+
+div.newsletter-container > div > input{
+    border: none;
+    font-size: 1.4rem;
+    outline: none;
+    padding: 20px 10px;
+    width: 60%;
+}
+
+div.newsletter-container > div > button{
+    background: var(--black);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.4rem;
+    outline: none;
+    padding: 20px 0;
+    text-transform: uppercase;
+    width: 30%;
+}
+

@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/main/img/darkBlueLogo.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;900&family=Poppins:wght@300;600;900&family=Zen+Antique+Soft&display=swap">
+        <link rel="stylesheet" href="../main/styles/global.css">
+        <link rel="stylesheet" href="../main/styles/header.css">
+        <link rel="stylesheet" href="../main/styles/footer.css">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/payment.css">
+        <link rel="stylesheet" href="./styles/address.css">
+        <link rel="stylesheet" href="./styles/emptyCart.css">
+        <title>Checkout - Cyclope</title>
+    </head>
+    <body>
+        <div id="home" class="header-container">
+            <img src="../main/img/darkBlueLogo.png" alt="logo" class="logo" onclick="goHome()">
+            <div class="wrapper option-1 option-1-1">
+                <ol class="c-stepper">
+                    <li class="c-stepper__item">
+                        <h3 class="c-stepper__title">Identificação</h3>
+                    </li>
+                    <li class="c-stepper__item">
+                        <h3 class="c-stepper__title">Pagamento</h3>
+                    </li>
+                    <li class="c-stepper__item">
+                        <h3 class="c-stepper__title">Confirmação</h3>
+                    </li>
+                </ol>
+              </div>
+            <div class="security-buy">
+                <img src="./img/verified_user_white_24dp.svg" alt="security buy">
+                <span>compra segura</span>
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="payment-section">
+                <h1 class="section-title">Frete e pagamento</h1>
+                <div class="freight-card">
+                    <div class="card-header">
+                        <img src="./img/local_shipping_black_24dp.svg" alt="truck">
+                        <h1>Selecione o tipo de entrega</h1>
+                    </div>
+                    <ul class="card-body__payment">
+                        
+                    </ul>
+                </div>
+                <div class="freight-card">
+                    <div class="card-header">
+                        <img src="./img/pix_black_24dp.svg" alt="pix">
+                        <h1>Pagar com Pix</h1>
+                    </div>
+                    <div class="card-body__pix">
+                        <ul>
+                            <li>
+                                <span>1</span>
+                                <p>Após a finalização do pedido, abra o app ou banco de sua preferência. Escolha a opção pagar com código Pix “copia e cola”, ou código QR.</p>
+                            </li>
+                            <li>
+                                <span>2</span>
+                                <p>Copie e cole o código, ou escaneie o código Qr com a câmera do seu celular. Confira todas as informações e autorize o pagamento.</p>
+                            </li>
+                            <li>
+                                <span>3</span>
+                                <p>Você vai receber a confirmação de pagamento no seu e-mail e através dos nossos canais. E pronto!</p>
+                            </li>
+                        </ul>
+                        <button id="finish" class="finish">finalizar com pix</button>
+                    </div>
+                </div>
+                <div class="freight-card">
+                    <div class="card-header">
+                        <img src="./img/payment_black_24dp.svg" alt="credit card">
+                        <h1>Pagar com cartão de crédito</h1>
+                    </div>
+                    <div class="card-body__credit">
+                        <label for="card-number">Número do Cartão</label>
+                        <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX">
+                        <label for="holder-name">Nome do Titular</label>
+                        <input type="text" id="holder-name">
+                        <label for="validity-date">Data de Validade do Cartão</label>
+                        <div class="validity-date">
+                            <input type="text" id="validity-date" placeholder="mês">
+                            <input type="text" id="validity-date" placeholder="ano">
+                        </div>
+                        <label for="security-code">Codico de Segurança</label>
+                        <input type="text" id="security-code" placeholder="cvv">
+                        <label for="installment">Parcelamento</label>
+                        <input type="text" id="installment">
+                        <div class="save-info">
+                            <input type="checkbox" id="save">
+                            <label for="save">Deixar meu cartão salvo</label>
+                        </div>
+                        <button id="finish" class="finish">finalizar com cartão de crédito</button>
+                    </div>
+                </div>
+                <div class="freight-card">
+                    <div class="card-header">
+                        <img src="./img/barcode_black_24dp.svg" alt="barcode">
+                        <h1>Pagar com boleto bancário</h1>
+                    </div>
+                    <div class="card-body__ticket">
+                        <span class="price">price</span>
+                        <p>Você poderá visualizar ou imprimir após a finalização do pedido. A data de vencimento é de 4 dias corridos após a conclusão do pedido. Após esta data, ele perderá a validade.</p>
+                        <button id="finish" class="finish">finalizar com boleto</button>
+                    </div>
+                </div>
+            </div>
+            <div class="address-section">
+                <h1 class="section-title">Endereço e resumo do pedido</h1>
+                <div class="address-card">
+                    <div class="card-header">
+                        <img src="./img/home_black_24dp.svg" alt="house">
+                        <h1>Endereço de entrega</h1>
+                    </div>
+                    <div class="card-body__address">
+                        
+                    </div>
+                    <span>Quer receber seu pedido em outro endereço?</span>
+                    <button id="finish" class="update-address">alterar endereço</button>
+                </div>
+            </div>
+        </div>
+        <footer id="contact">
+            <div>
+                <ul>
+                    MAIS AJUDA
+                    <li>Dúvidas Frequentes</li>
+                    <li>Tempo de Entrega</li>
+                    <li>Central de Relacionamento</li>
+                    <li>Regras de Voucher</li>
+                    <li>Contrato de Compra e Venda</li>
+                    <li>Mapa de Categorias</li>
+                </ul>
+                <ul>
+                    SOBRE NÓS
+                    <li>Quem somos</li>
+                    <li>Política de Privacidade</li>
+                    <li>Termos de uso</li>
+                    <li>Programa de Afiliados</li>
+                    <li>Nossos fornecedores</li>
+                    <li>Nossos fornecedores</li>
+                </ul>
+                <ul>
+                    CONTATO
+                    <li>Segunda a sexta das 08:10 as 18:00</li>
+                    <li>suporte@cyclope.com.br</li>
+                    <li>(11) 2050-0560</li>
+                </ul>
+            </div>
+            <span>Todos Direitos Reservados © 2016</span>
+        </footer>     
+    </body>
+    <script type="module" src="./functions.js"></script>
+</html>

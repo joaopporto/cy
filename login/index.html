@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/main/img/darkBlueLogo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;900&family=Poppins:wght@300;600;900&family=Zen+Antique+Soft&display=swap">
+    <link rel="stylesheet" href="../main/styles/global.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Login - Cyclope</title>
+</head>
+<body>
+    <div class="container">
+        <form id="login-form">
+          <h1>Bem vindo!</h1>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="e-mail" placeholder="exemplo@gmail.com.br">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="************">
+          </div>
+          <button type="submit" id="login-form-submit">Accessar</button>
+          <button id="create-account-form">Criar conta</button>
+          <span id="login-error-msg">Credenciais inválidas</span>
+        </form>
+      </div>
+      <script src="login.js"></script>
+</body>
+</html>

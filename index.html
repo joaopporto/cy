@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/darkBlueLogo.png">
+        <link rel="stylesheet" href="./main/styles/global.css">
+        <link rel="stylesheet" href="./main/styles/header.css">
+        <link rel="stylesheet" href="./main/styles/carousel.css">
+        <link rel="stylesheet" href="./main/styles/style.css">
+        <link rel="stylesheet" href="./main/styles/products.css">
+        <link rel="stylesheet" href="./main/styles/footer.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;900&family=Poppins:wght@300;600;900&family=Zen+Antique+Soft&display=swap">
+        <title>Cyclope Sports</title>
+    </head>
+    <body>
+        <div id="home" class="header-container">
+            <img src="img/darkBlueLogo.png" alt="logo" class="logo" onclick="goHome()">
+            <input type="text" class="search">
+            <div class="data">
+                <a class="login" href="/login/index.html">  
+                    <img src="./img/person_white.svg" alt="account icon" class="account">
+                    Conta 
+                </a>
+                <img src="./img/shopping_cart_white.svg" alt="shopping cart icon" class="shopping-cart" onclick="handleCart()">
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#sale" class="menu-item">
+                        Promoções
+                    </a>
+                </li>
+                <li>
+                    <a href="#who-we-are" class="menu-item">
+                        Quem somos
+                    </a>
+                </li>
+                <li>
+                    <a href="#products" class="menu-item">
+                        Produtos
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="menu-item">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="divider"></div>
+
+        <div class="container">
+
+            <div class="slider" id="sale">
+                <h2>Promoções</h2>
+                <!-- slide 1 -->
+                <div class="slide">
+                  <ul>
+                    <li>
+                        <img src="./main/img/products/bicicleta-caloi-ceci.png" alt="">
+                        <div>
+                            <h2>Bicicleta Caloi Ceci</h2>
+                            <p id="freight">frete grátis</p>
+                            <span class="price">R$ 1.099,99</span>
+                            <span class="set-off">R$ 880,19</span>
+                            <!-- 20% off -->
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./main/img/products/bola-de-basquete-wilson-nba.jpg" alt="">
+                        <div>
+                            <h2>Bola de Basquete Wilson NBA</h2>
+                            <p id="freight">frete grátis</p>
+                            <span class="price">R$ 200,40</span>
+                            <span class="set-off">R$ 180,36</span>
+                            <!-- 10% off -->
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./main/img/products/raquete-de-tenis.jpg" alt="">
+                        <div>
+                            <h2>Raquete de Tênis Wilson</h2>
+                            <p id="freight">frete grátis</p>
+                            <span class="price">R$ 799,90</span>
+                            <span class="set-off">R$ 679,91</span>
+                            <!-- 15% off -->
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+          
+                 <!-- slide 2 -->
+                <div class="slide">
+                  <ul>
+                    <li>
+                        <img src="./main/img/products/prancha-de-surf-msd-surfboards.jpg" alt="">
+                        <div>
+                            <h2>Prancha de Surf MSD Surfboards Fish 6.0</h2>
+                            <p id="freight">frete grátis</p>
+                            <span class="price">R$ 2.329,00</span>
+                            <span class="set-off">R$ 1630,30</span>
+                            <!-- 30% off -->
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./main/img/products/skate-longboard.jpg"/>
+                        <div>
+                            <h2>Skate Longboard Hondar Freeride Woody</h2>
+                            <p id="freight">frete grátis</p>
+                            <span class="price">R$ 699,00</span>
+                            <span class="set-off">R$ 594,15</span>
+                            <!-- 15% off -->
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./main/img/products/barraca-de-camping.jpg" alt="">
+                        <div >
+                            <h2>Barraca de Camping</h2>
+                            <p id="freight">frete grátis</p>
+                            <span class="price">R$ 1.099,00</span>
+                            <span class="set-off">R$ 934,15</span>
+                            <!-- 20% off -->
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+          
+                 <!-- slide 3 -->
+                <div class="slide">
+                  <ul>
+                    <li>
+                        <img src="./main/img/products/patins-rollerblade-cruiser.jpg" alt="">
+                        <div>
+                            <h2>Patins Rollerblade Cruiser Pro X</h2>
+                            <p id="freight">frete grátis</p>
+                            <span class="price">R$ 2.250,00</span>
+                            <span class="set-off">R$ 1687,50</span>
+                            <!-- 25% off -->
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./main/img/products/capacete-de-motocross.jpg" alt="">
+                        <div>
+                            <h2>Capacete de Motocross ASW Fusion Solid</h2>
+                            <p id="freight">frete grátis</p>
+                            <span class="price">R$ 824,90</span>
+                            <span class="set-off">R$ 659,92</span>
+                            <!-- 20% off -->
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+
+                 <!-- Control buttons -->
+                <button class="btn btn-next"></button>
+                <button class="btn btn-prev"></button>
+              </div>
+
+            <div class="home" id="who-we-are">
+                <h1 class="title">Quem nós somos?</h1>
+                <p class="text">
+                    Desde de 1993, a Cyclope Sports é uma empresa de venda de artigos 
+                    esportivos que oferece, não somente equipamentos de qualidade, como 
+                    também os melhores preços do mercado. Então se você está procurando 
+                    algum equipamento esportivo, você deveria dar uma olhada nos nossos 
+                    produtos logo abaixo.
+                </p>
+            </div>
+            <div id="products">
+            </div>
+            <div id="feedbacks">
+            </div>
+        </div>
+        <footer id="contact">
+            <div>
+                <ul>
+                    MAIS AJUDA
+                    <li>Dúvidas Frequentes</li>
+                    <li>Tempo de Entrega</li>
+                    <li>Central de Relacionamento</li>
+                    <li>Regras de Voucher</li>
+                    <li>Contrato de Compra e Venda</li>
+                    <li>Mapa de Categorias</li>
+                </ul>
+                <ul>
+                    SOBRE NÓS
+                    <li>Quem somos</li>
+                    <li>Política de Privacidade</li>
+                    <li>Termos de uso</li>
+                    <li>Programa de Afiliados</li>
+                    <li>Nossos fornecedores</li>
+                    <li>Nossos fornecedores</li>
+                </ul>
+                <ul>
+                    CONTATO
+                    <li>Segunda a sexta das 08:10 as 18:00</li>
+                    <li>suporte@cyclope.com.br</li>
+                    <li>(11) 2050-0560</li>
+                </ul>
+            </div>
+            <span>Todos Direitos Reservados © 2016</span>
+        </footer>
+    </body>
+    <script type="module" src="./main/service/main.js"></script>
+    <script src="./main/service/functions.js"></script>
+</html>

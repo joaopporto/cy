@@ -1,0 +1,107 @@
+div.slider{
+    height: calc(100vh - 16vh);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+div.slider > h2{
+    box-sizing: border-box;
+    font-size: 2.8rem;
+    font-weight: 600;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+
+div.slide{
+    height: calc(100vh - 21vh);
+    position: absolute;
+    transition: all 0.5s;
+    width: 100%;
+}
+
+div.slide > ul{
+    align-items: center;
+    display: flex;
+    height: calc(100vh - 21vh);
+    justify-content: center;
+    width: 100%;
+}
+
+div.slide > ul > li{
+    background: var(--white);
+    cursor: pointer;
+    height: 450px;
+    margin: 0 10px;
+    width: 20%;
+}
+
+div.slide > ul > li > div{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    line-height: 26px;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+div.slide > ul > li > div > h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+
+p#freight{
+    color: green;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+span.price{
+    color: #8c8c8c;
+    font-size: 1.4rem;
+    text-decoration: line-through;
+}
+
+span.set-off{
+    font-size: 1.8rem;
+}
+
+div.slide > ul > li > img{
+    height: 250px;
+    object-fit: contain;
+    width: 100%;
+}
+
+button.btn{
+    background: var(--white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.8rem;
+    height: 40px;
+    padding: 10px;
+    position: absolute;
+    width: 40px;
+    z-index: 10px;
+}
+
+button.btn:active{
+    transform: scale(1.1);
+}
+
+button.btn-prev{
+    background: url(../img/arrow_back_ios_black_24dp.svg) no-repeat center;
+    left: 5%;
+    top: 50%;
+}
+
+button.btn-next{
+    background: url(../img/arrow_forward_ios_black_24dp.svg) no-repeat center;
+    right: 5%;
+    top: 50%;
+}

@@ -1,0 +1,101 @@
+@import url("../main/global.css");
+
+body{
+    background-image: linear-gradient(rgba(52, 52, 52, 0.5), rgba(0, 0, 0, 0.6)), url("../main/img/pexels-pixabay-416676.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 100vh;
+}
+
+body > div.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+body > div > form {
+    align-items: center;
+    background: var(--white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    justify-content: center;
+    left: 50%;
+    min-width: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 20%;
+    /* justify-content: space-around; */
+}
+
+body > div > form > h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+body > div > form > div{
+    box-sizing: border-box;
+    margin: 15px 0;
+    padding: 5px;
+    width: 80%;
+}
+
+body > div > form > img{
+    height: 15rem;
+    width: 15rem;
+    border: 3px solid var(--black);
+    border-radius: 50%;
+}
+
+label{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+input{
+    background: var(--light-grey);
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+	font-size: 1.6rem;
+    margin: 5px 0 20px 0;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.65rem;
+    height: 4rem;
+    margin-top: 10px;
+    width: 70%;
+}
+
+button#login-form-submit{
+    background: var(--dark-blue);
+    border: none;
+    color: var(--white);
+}
+
+button#login-form-submit:hover{
+    background: #080d48;
+}
+
+button#create-account-form{
+    background: var(--white);
+    color: var(--black);
+    border: 1px solid var(--dark-blue);
+}
+
+#login-error-msg {
+    color: #dd0505;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    opacity: 0;
+    padding: 5px;
+    text-align: center;
+    width: 60%;
+}

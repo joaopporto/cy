@@ -1,0 +1,89 @@
+div.header-container{
+    align-items: center;
+    background: var(--dark-blue);
+    display: flex;
+    height: 8vh;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 100%;
+}
+
+img.logo{
+    height: 10rem;
+    width: 10rem;
+}
+
+input.search{
+    background: url(img/search_black.svg) no-repeat 3px 3px, var(--white);
+    border-radius: 12px;
+    font-size: 1.6rem;
+    outline: none;
+    padding: 5px 5px 5px 30px;
+    width: 30%;  
+}
+
+div.data{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+
+a.login{
+    align-items: center;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+img.account{
+    height: 30px;
+    margin-right: 5px;
+    width: 30px;
+}
+
+img.shopping-cart{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+nav{
+    background-color: var(--white);
+    width: 100%;
+}
+
+ul.menu{
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    height: 6vh;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 35%;
+}
+
+li{
+    list-style: none;
+}
+
+a.menu-item{
+    background: var(--white);
+    color: var(--dark-blue);
+    cursor: pointer;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+a.menu-item:hover{
+    border-bottom: 2px solid var(--dark-blue);
+}
+
+div.divider{
+    background: var(--dark-blue);
+    height: 4vh;
+    width: 100%;
+}

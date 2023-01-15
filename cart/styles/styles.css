@@ -1,0 +1,24 @@
+body{
+    background: var(--white);
+}
+
+div.body-container{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    min-height: calc(100vh - 8vh);
+    padding-top: 100px;
+    width: 65%;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+div[hide]{
+    display: none;
+}

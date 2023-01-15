@@ -1,0 +1,109 @@
+@import url("../main/styles/global.css");
+
+body{
+    background-image: linear-gradient(rgba(52, 52, 52, 0.5), rgba(0, 0, 0, 0.6)), url("../main/img/pexels-pixabay-416676.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 100vh;
+}
+
+body > div.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+form[hide]{
+    display: none;
+}
+
+form.personal-form,
+.address-form{
+    align-items: center;
+    background: var(--white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-between;
+    left: 50%;
+    min-width: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 25%;
+}
+
+.tab-container{
+    background-color: var(--light-grey);
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tab-container button{
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: 0.3s;
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 50%;
+}
+
+button[active]{
+    background: var(--white);
+    border: none;
+}
+
+div.data{
+    margin: 15px 0;
+    width: 80%;
+}
+
+body > div > form > img{
+    height: 15rem;
+    width: 15rem;
+    border: 3px solid var(--black);
+    border-radius: 50%;
+}
+
+label{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+input{
+    background: var(--light-grey);
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+	font-size: 1.6rem;
+    margin: 5px 0 20px 0;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+}
+
+button.submit{
+    background: var(--white);
+    border: 1px solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    font-size: 1.65rem;
+    height: 4rem;
+    margin-top: 10px;
+    width: 70%;
+}
+
+#error-msg{
+    color: #dd0505;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    opacity: 0;
+    text-align: center;
+    width: 60%;
+}

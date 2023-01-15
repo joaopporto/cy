@@ -1,0 +1,144 @@
+div.payment-section{
+    padding: 0 50px;
+    width: 60%;
+}
+
+div.freight-card{
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    margin: 0 auto 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+ul.card-body__payment{
+    display: flex;
+    flex-direction: column;
+}
+
+ul.card-body__payment > li{
+    border-bottom: 2px solid #ebebeb;
+    display: flex;
+    line-height: 25px;
+    margin-top: 20px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+ul.card-body__payment > li:last-child{
+    border: none;
+}
+
+img.product-img{
+    height: 120px;
+    margin-right: 10px;
+    width: 120px;
+}
+
+ul.card-body__payment > li > div > h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+div.product-card > div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    width: 65%;
+}
+
+div.card-body > div > h2, p, label, input{
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+div.card-body > div > h2{
+    font-weight: 600;
+}
+
+div.card-body__pix > ul > li{
+    display: flex;
+    line-height: 25px;
+    margin: 5px 0;
+}
+
+
+div.card-body__pix > ul > li > span, p{
+    font-size: 1.6rem;
+}
+
+div.card-body__pix > ul > li > span{
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: 50%;
+    color: #333;
+    display: flex;
+    font-size: 1.4rem;
+    height: 20px;
+    justify-content: center;
+    margin-right: 10px;
+    min-width: 20px;    
+}
+
+div.card-body__credit{
+    display: flex;
+    flex-direction: column;
+}
+
+div.card-body__credit > div{
+    margin-bottom: 20px;
+}
+
+div.card-body__credit > input{
+    border: 1px solid var(--black);
+    margin-bottom: 20px;
+    outline: none;
+    padding: 10px;
+    width: 50%;
+}
+
+div.validity-date{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+div.validity-date > input:not(#save){
+    border: 1px solid var(--black);
+    outline: none;
+    padding: 10px;
+    width: 48%;
+}
+
+input#save{
+    margin-right: 10px;
+}
+
+span.price{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+div.card-body__ticket > p{
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+button.finish{
+    background: var(--dark-blue);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.65rem;
+    margin-top: 10px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    width: 40%;
+}
+
+button.finish:hover{
+    background: #080d48;
+}
+
